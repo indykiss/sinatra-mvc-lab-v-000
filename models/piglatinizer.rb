@@ -20,6 +20,7 @@ class PigLatinizer
     vowels = ["a","e","i","o","u", "A", "E", "I", "O", "U"]
     
     string_array.map do |word|
+      word = word.downcase
     
     if vowels.include?(word[0]) 
         word + "way"
