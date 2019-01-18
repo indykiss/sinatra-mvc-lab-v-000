@@ -1,6 +1,6 @@
 
 
-class PigLatinizer
+class Piglatinizer
   attr_accessor :string 
   @@all = []
   
