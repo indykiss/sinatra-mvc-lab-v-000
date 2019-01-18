@@ -9,10 +9,11 @@ class App < Sinatra::Base
   end 
   
   post '/piglatinize' do 
+    @piglatinizer = Piglatinizer.new
+    @user_phrase = params[:user_phrase]
 
     erb :display_piglatin
   end 
-  
   
   
 end
