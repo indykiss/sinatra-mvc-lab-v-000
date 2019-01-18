@@ -28,6 +28,8 @@ class PigLatinizer
               word[2..-1] + word[0..1] + "ay"
               elsif constants.include?(word[0])
                 word[1..-1] + word[0] + "ay"
+                  elsif constants.include?(word[0]) && vowels.include?(word[1])
+                    word[1..-1] + word[0] + "ay"
           end 
       end.join(" ")   
     end
